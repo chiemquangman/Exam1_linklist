@@ -152,6 +152,9 @@ void LinkedList::badFunction()
     // Intentional bug: accessing invalid memory
     Node* badNode = NULL;
     std::cout << badNode->header << std::endl;  // Dereferencing null pointer
+
+    // Intentionally creating memory leak
+    // Node* leakedNode = new Node("Leaked Header", "Leaked Data");
 }
 
 int main()
